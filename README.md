@@ -1,41 +1,33 @@
-#### Dev Environment - WSL2 + Docker
+**Dev Environment – WSL2 + Docker**
 
-A development environment designed for developers who require an isolated setup apart from their main workflow. Supports version control and modular extensions.
-
----
-
-#### Features
-
-- WSL2-based environment on Windows
-- Docker preconfigured
-- NGINX reverse proxy (configurable)
-- Ready for multiple tech stacks (Node.js, PHP, Python, etc.)
-- Clean separation from your main system
-- Easy to reproduce, share, and reset
+Environment focused on developers who need an isolated setup outside their main workflow. Ideal for local development with Docker and WSL2.
 
 ---
 
-#### Includes
+**Features**
+- WSL2 on Windows
+- Docker-based environment
+- NGINX reverse proxy
+- Modular and extensible (Node.js, PHP, Python, etc.)
 
-- WSL2 (Ubuntu)
+---
+
+**Includes**
+- Ubuntu via WSL2
 - Docker & Docker Compose
-- NGINX
-- Preconfigured volumes for code
-- Optional mounts and aliases
+- Basic folder structure for code and config
 
 ---
 
-##### Setup Instructions
+**Install (manual steps for now)**
 
-##### Prerequisites
+1. Enable WSL2 on Windows  
+2. Install Ubuntu from Microsoft Store  
+3. Install Docker Desktop with WSL2 integration
 
-- Windows 10/11 with WSL2 enabled
-- Virtualization enabled in BIOS
-- Admin permissions
+---
 
-#### 2. Install WSL2
+**Usage (once configured)**
 
-```powershell
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-wsl --set-default-version 2
+```bash
+docker compose up -d
