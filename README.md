@@ -1,10 +1,10 @@
-# Dev Environment - WSL2 + Docker
+#### Dev Environment - WSL2 + Docker
 
 A development environment designed for developers who require an isolated setup apart from their main workflow. Supports version control and modular extensions.
 
 ---
 
-## 🚀 Features
+#### Features
 
 - WSL2-based environment on Windows
 - Docker preconfigured
@@ -15,7 +15,7 @@ A development environment designed for developers who require an isolated setup 
 
 ---
 
-## 📦 Includes
+#### Includes
 
 - WSL2 (Ubuntu)
 - Docker & Docker Compose
@@ -25,15 +25,15 @@ A development environment designed for developers who require an isolated setup 
 
 ---
 
-## 🛠️ Setup Instructions
+##### Setup Instructions
 
-### 1. Prerequisites
+##### Prerequisites
 
 - Windows 10/11 with WSL2 enabled
 - Virtualization enabled in BIOS
 - Admin permissions
 
-### 2. Install WSL2
+#### 2. Install WSL2
 
 ```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
